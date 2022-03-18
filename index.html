@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>공차</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="shortcut icon" href="favicon/ico.ico">
+    <link rel="stylesheet" href="css/swiper.min.css">
+
+    <script defer src="js/jquery.min.js"></script>
+    <script defer src="js/swiper.min.js"></script>
+    <script defer src="js/header_swipe_slider.js"></script>
+    <script defer src="js/best_swiper_slider.js"></script>
+    <script defer src="js/index.js"></script>
+</head>
+<body>
+    <header>
+        <div class="inner"> <!-- inner : 가운데 -->
+            <h1><a href="index.html">Gong cha</a></h1>
+            <!-- pc nav -->
+            <nav class="pc-menu">
+                <ul class="mainMenu">
+                    <li class="item">
+                        <div class="item__name"><a href="#">Brand</a></div>
+                        <div class="item__contents">
+                            <div class="contents__menu">
+                                <ul class="menu__inner">
+                                    <li><a href="#">브랜드 소개</a></li>
+                                    <li><a href="#">공차의 약속</a></li>
+                                    <li><a href="#">브랜드 아이덴티티</a></li>
+                                    <li><a href="#">세계 속의 공차</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="item">
+                        <div class="item__name"><a href="#">Menu</a></div>
+                        <div class="item__contents">
+                            <div class="contents__menu">
+                                <ul class="menu__inner">
+                                    <li><a href="#">주문방법</a></li>
+                                    <li><a href="#">음료</a></li>
+                                    <li><a href="#">디저트</a></li>
+                                    <li><a href="#">MD상품</a></li>
+                                    <li><a href="#">티스토리</a></li>
+                                    <li><a href="#">티레시피</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="item">
+                        <div class="item__name"><a href="#">Store</a></div>
+                        <div class="item__contents">
+                            <div class="contents__menu">
+                                <ul class="menu__inner">
+                                    <li><a href="#">매장 찾기</a></li>
+                                    <li><a href="#">가맹점 개설문의</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="item">
+                        <div class="item__name"><a href="#">Membership</a></div>
+                        <div class="item__contents">
+                            <div class="contents__menu">
+                                <ul class="menu__inner">
+                                    <li><a href="#">NEW 공차 멤버십</a></li>
+                                    <li><a href="#">공차 카드 & e-Gift</a></li>
+                                    <li><a href="#">FAQ</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="item">
+                        <div class="item__name"><a href="#">Benefit</a></div>
+                        <div class="item__contents">
+                            <div class="contents__menu">
+                                <ul class="menu__inner">
+                                    <li><a href="#">통신사 제휴</a></li>
+                                    <li><a href="#">결제 서비스</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="item">
+                        <div class="item__name"><a href="#">Event & News</a></div>
+                        <div class="item__contents">
+                            <div class="contents__menu">
+                                <ul class="menu__inner">
+                                    <li><a href="#">이벤트</a></li>
+                                    <li><a href="#">공차소식</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+
+        <!-- mo nav -->
+        <nav class="mo-menu">
+            <ul class="mainMenu">
+                <li class="item" id="Brand">
+                    <a href="#Brand" class="btn">Brand</a>
+                    <ul class="submenu">
+                        <li><a href="#">브랜드 소개</a></li>
+                        <li><a href="#">공차의 약속</a></li>
+                        <li><a href="#">브랜드 아이덴티티</a></li>
+                        <li><a href="#">세계 속의 공차</a></li>
+                    </ul>
+                </li>
+                <li class="item" id="Menu">
+                    <a href="#Menu" class="btn">Menu</a>
+                    <ul class="submenu">
+                        <li><a href="#">주문방법</a></li>
+                        <li><a href="#">음료</a></li>
+                        <li><a href="#">디저트</a></li>
+                        <li><a href="#">MD상품</a></li>
+                        <li><a href="#">티스토리</a></li>
+                        <li><a href="#">티레시피</a></li>
+                    </ul>
+                </li>
+                <li class="item" id="Store">
+                    <a href="#Store" class="btn">Store</a>
+                    <ul class="submenu">
+                        <li><a href="#">매장 찾기</a></li>
+                        <li><a href="#">가맹점 개설문의</a></li>
+                    </ul>
+                </li>
+                <li class="item" id="Membership">
+                    <a href="#Membership" class="btn">Membership</a>
+                    <ul class="submenu">
+                        <li><a href="#">NEW 공차 멤버십</a></li>
+                        <li><a href="#">공차 카드 & e-Gift</a></li>
+                        <li><a href="#">FAQ</a></li>
+                    </ul>
+                </li>
+                <li class="item" id="Benefit">
+                    <a href="#Benefit" class="btn">Benefit</a>
+                    <ul class="submenu">
+                        <li><a href="#">통신사 제휴</a></li>
+                        <li><a href="#">결제 서비스</a></li>
+                    </ul>
+                </li>
+                <li class="item" id="Event">
+                    <a href="#Event" class="btn">Event & News</a>
+                    <ul class="submenu">
+                        <li><a href="#">이벤트</a></li>
+                        <li><a href="#">공차소식</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+
+        <!-- menu-toggle-btn -->
+        <div class="menu-toggle-btn">
+            <span class="one"></span>
+            <span class="two"></span>
+            <span class="three"></span>
+        </div>
+    </header>
+
+    <!-- mo - swiper slider -->
+    <section class="mo-slide">
+        <h2 class="hidden">모바일 슬라이드</h2>
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide"><img src="images/mo_slide01.jpg" alt="상큼 달콤 딸기 로맨스"></div>
+              <div class="swiper-slide"><img src="images/mo_slide02.jpg" alt="딸기와 티가 만나 더 특별해진 즐거움"></div>
+              <div class="swiper-slide"><img src="images/mo_slide03.jpg" alt="한국 하동의 호지 밀크티"></div>
+              <div class="swiper-slide"><img src="images/mo_slide04.jpg" alt="BEST COMBINATION"></div>
+              <div class="swiper-slide"><img src="images/mo_slide05.jpg" alt="그릭요거트 한 통이 그대로!"></div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </section>
+
+    <!-- tab - swiper slider -->
+    <section class="tab-slide">
+        <h2 class="hidden">태블릿 슬라이드</h2>
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide"><img src="images/tab_slide01.jpg" alt="상큼 달콤 딸기 로맨스"></div>
+              <div class="swiper-slide"><img src="images/tab_slide02.jpg" alt="딸기와 티가 만나 더 특별해진 즐거움"></div>
+              <div class="swiper-slide"><img src="images/tab_slide03.jpg" alt="한국 하동의 호지 밀크티"></div>
+              <div class="swiper-slide"><img src="images/tab_slide04.jpg" alt="BEST COMBINATION"></div>
+              <div class="swiper-slide"><img src="images/tab_slide05.jpg" alt="그릭요거트 한 통이 그대로!"></div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </section>
+
+    <!-- pc - swiper slider -->
+    <section class="pc-slide">
+        <h2 class="hidden">PC 슬라이드</h2>
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide"><img src="images/pc_slide01.jpg" alt="상큼 달콤 딸기 로맨스"></div>
+              <div class="swiper-slide"><img src="images/pc_slide02.jpg" alt="딸기와 티가 만나 더 특별해진 즐거움"></div>
+              <div class="swiper-slide"><img src="images/pc_slide03.jpg" alt="한국 하동의 호지 밀크티"></div>
+              <div class="swiper-slide"><img src="images/pc_slide04.jpg" alt="BEST COMBINATION"></div>
+              <div class="swiper-slide"><img src="images/pc_slide05.jpg" alt="그릭요거트 한 통이 그대로!"></div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </section>
+
+    <!-- Tea recipe -->
+    <section class="tea-recipe">
+        <div class="inner">
+            <h2>공차 티 레시피</h2>
+            <div class="teas">
+                <p><a href="javascript:void(0)" class="tea-one">오리지널 티</a></p>
+                <p><a href="javascript:void(0)" class="tea-two">밀크티</a></p>
+                <p><a href="javascript:void(0)" class="tea-three">과일믹스</a></p>
+            </div>
+
+            <div class="tea tea1">
+                <img src="images/Original-Tea.jpg" alt="Original-Tea">
+                <div class="tea-text-box">
+                    <h3>TEA RECIPE - 티 레시피</h3>
+                    <p>오리지널 티 - Original Tea</p>
+                    <p>티백이나 가루가 아닌 황실에 바치던 잎차만 골라 1도 1초도 어기지 않고 차마다 다른 황금률로 우려 한 잔 한 잔 부드러움을 더해 만듭니다.</p>
+                </div>
+            </div>
+
+            <div class="tea tea2">
+                <img src="images/Milk-Tea.jpg" alt="Milk-Tea">
+                <div class="tea-text-box">
+                    <h3>TEA RECIPE - 티 레시피</h3>
+                    <p>밀크티 - Milk Tea</p>
+                    <p>최적의 자연이 키워낸 입차만 골라 각 차종에 맞는 황금률로 우려 담백한 우유와 허니, 카라멜 등 새로운 맛을 더해 만듭니다.</p>
+                </div>
+            </div>
+
+            <div class="tea tea3">
+                <img src="images/Fruit-Mix.jpg" alt="Fruit-Mix">
+                <div class="tea-text-box">
+                    <h3>TEA RECIPE - 티 레시피</h3>
+                    <p>과일믹스 - Fruit Mix</p>
+                    <p>찻잎의 푸름을 간직한 녹차만 골라 최적의 온도 89℃로 우려 달콤상큼한 과일을 더해 만듭니다.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- BEST COMBINATION -->
+    <section class="best-combination">
+        <div class="inner">
+            <h2>
+                베스트 콤비네이션<br>
+                &#40;BEST COMBINATION&#41;
+            </h2>
+            <div class="swiper mySwiperBest">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide swiper1">
+                        <img src="images/best_com01.png" alt="블랙 밀크티와 펄">
+                        <div class="slide-text">
+                            <h3>블랙 밀크티 &#43; 티</h3>
+                            <p>
+                                블랙 밀크티와 쫄깃쫄깃한 펄의 만남!<br>
+                                공차의 대표 시그니처 메뉴를 만나보세요.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide swiper2">
+                        <img src="images/best_com02.png" alt="타로 밀크티와 펄">
+                        <div class="slide-text">
+                            <h3>타로 밀크티 &#43; 티</h3>
+                            <p>
+                                고소하고 달콤한 타로 밀크티와<br>
+                                쫀득쫀득한 펄의 만남!<br>
+                                공차의 대표 시그니처 메뉴를 만나보세요.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide swiper3">
+                        <img src="images/best_com03.png" alt="피스타치오 밀크티와 펄">
+                        <div class="slide-text">
+                            <h3>피스타치오 밀크티 &#43; 펄</h3>
+                            <p>
+                                그린티를 넣은 달콤하고 고소한 피스타치오<br>
+                                밀크티와 쫀득쫀득한 펄의 만남!<br>
+                                달콤하고 고소한 맛과 쫀득한 식감을<br>
+                                느껴보세요.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide swiper4">
+                        <img src="images/best_com04.png" alt="제주 그린 밀크티와 펄">
+                        <div class="slide-text">
+                            <h3>제주 그린 밀크티 &#43; 펄</h3>
+                        <p>
+                            제주 녹차로 만든 밀크티와 쫀득쫀득한<br>
+                            펄이 만나<br>
+                            선사하는 달콤 쌉싸름한 맛을 느껴보세요.
+                        </p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide swiper5">
+                        <img src="images/best_com05.png" alt="청포도 그린티와 알로에">
+                        <div class="slide-text">
+                            <h3>청포도 그린티 &#43; 알로에</h3>
+                            <p>
+                                상콤달콤한 청포도와 사각사각한 알로에 토핑의 만남!<br>
+                                과일믹스 그린티를 즐겨보세요.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide swiper6">
+                        <img src="images/best_com06.png" alt="망고 요구르트와 화이트펄">
+                        <div class="slide-text">
+                            <h3>망고 요구르트 &#43; 화이트펄</h3>
+                            <p>
+                                달콤하고 진한 망고 과육과 상큼한 요구르트,<br>
+                                꼬들꼬들한 화이트펄의 만남!<br>
+                                상큼달콤한 맛과 재밌는 식감을 즐겨보세요.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+        
+    </section>
+
+    <!-- video -->
+    <section class="video">
+        <video autoplay loop muted playsinline  class="play">
+            <source src="images/Gongcha Brand.mp4" type="video/mp4">
+        </video>
+    </section>
+
+    <!-- Gongcha group -->
+    <section class="gongcha-group">
+        <div class="inner">
+            <h2>
+                최고의 한 잔을 위한 공차의<br>
+                철학
+            </h2>
+            <div class="gongcha-group-div gongcha-one">
+                <img src="images/brand_promise_con_img1.png" alt="최상의 품질을 가진 찻잎 선별">
+                <div class="text">
+                    <h3>최상의 품질을 가진 찻잎 선별</h3>
+                    <p>
+                        고산지대에 위치한 대만 현지의 따뜻하고 깨끗한 기후 조건의 재배지에서
+                        최적의 시기, 최상의 품질을 가진 잎만을 수확합니다.
+                        선별된 차의 신선한 향을 유지 시킬 수 있도록
+                        공차만의 노하우로 건조시키며,차마다 알맞은 발효도를 맞추어 발효합니다.
+                    </p>
+                </div>
+            </div>
+
+            <div class="gongcha-group-div gongcha-two">
+                <div class="text">
+                    <h3>엄격한 티&#40;Tea&#41;의 신선도 관리</h3>
+                    <p>
+                        고산지대에 위치한 대만 현지의 따뜻하고 깨끗한 기후 조건의 재배지에서
+                        최적의 시기, 최상의 품질을 가진 잎만을 수확합니다.
+                        선별된 차의 신선한 향을 유지 시킬 수 있도록
+                        공차만의 노하우로 건조시키며,차마다 알맞은 발효도를 맞추어 발효합니다.
+                    </p>
+                </div>
+                <img src="images/brand_promise_con_img2.png" alt="엄격한 티&#40;Tea&#41;의 신선도 관리">
+            </div>
+
+            <div class="gongcha-group-div gongcha-three">
+                <img src="images/brand_promise_con_img3.png" alt="티전문가 &#34;Tea Master&#34; 양성">
+                <div class="text">
+                    <h3>티전문가 &#34;Tea Master&#34; 양성</h3>
+                    <p>
+                        고산지대에 위치한 대만 현지의 따뜻하고 깨끗한 기후 조건의 재배지에서
+                        최적의 시기, 최상의 품질을 가진 잎만을 수확합니다.
+                        선별된 차의 신선한 향을 유지 시킬 수 있도록
+                        공차만의 노하우로 건조시키며,차마다 알맞은 발효도를 맞추어 발효합니다.
+                    </p>
+                </div>
+            </div>
+
+            <div class="gongcha-group-div gongcha-four">
+                <div class="text">
+                    <h3>티&#40;Tea&#41;종류부터 얼음량까지, 100% 맞춤 음료</h3>
+                    <p>
+                        고산지대에 위치한 대만 현지의 따뜻하고 깨끗한 기후 조건의 재배지에서
+                        최적의 시기, 최상의 품질을 가진 잎만을 수확합니다.
+                        선별된 차의 신선한 향을 유지 시킬 수 있도록
+                        공차만의 노하우로 건조시키며,차마다 알맞은 발효도를 맞추어 발효합니다.
+                    </p>
+                </div>
+                <img src="images/brand_promise_con_img4.png" alt="티(Tea)종류부터 얼음량까지, 100% 맞춤 음료">
+            </div>
+
+            <div class="gongcha-group-div gongcha-five">
+                <img src="images/brand_promise_con_img5.png" alt="누구나 쉽고 맛있게 즐길 수 있는 (茶) 문화 확산">
+                <div class="text">
+                    <h3>누구나 쉽고 맛있게 즐길 수 있는 차(茶) 문화 확산</h3>
+                    <p>
+                        고산지대에 위치한 대만 현지의 따뜻하고 깨끗한 기후 조건의 재배지에서
+                        최적의 시기, 최상의 품질을 가진 잎만을 수확합니다.
+                        선별된 차의 신선한 향을 유지 시킬 수 있도록
+                        공차만의 노하우로 건조시키며,차마다 알맞은 발효도를 맞추어 발효합니다.
+                    </p>
+                </div>
+            </div>
+        </div>
+        
+    </section>
+
+    <!-- footer -->
+    <footer>
+        <div class="inner1">
+            <div class="footer1">
+                <div class="sel_wrap">
+                    <button type="button" class="sel_btn">회사소개</button>
+                    <ul class="sel_lst">
+                    <li><a href="#">회사소개</a></li>
+                    <li><a href="#">제휴/제안</a></li>
+                    <li><a href="#">고객센터</a></li>
+                    <li><a href="#">개인정보처리방침</a></li>
+                    <li><a href="#">이메일무단수집거부</a></li>
+                    <li><a href="#">HOT-LINE</a></li>
+                    <li><a href="#">사이트맵</a></li>
+                    </ul>
+                  </div>
+            </div>
+            <ul class="pc-footer-ul">
+                <li><a href="#">회사소개</a></li>
+                <li><a href="#">제휴/제안</a></li>
+                <li><a href="#">고객센터</a></li>
+                <li><a href="#">개인정보처리방침</a></li>
+                <li><a href="#">이메일무단수집거부</a></li>
+                <li><a href="#">HOT-LINE</a></li>
+                <li><a href="#">사이트맵</a></li>
+            </ul>
+        </div>
+        <div class="inner2">
+            <div class="footer2">
+                <p>고객센터 : <span>02-779-7758</span> <br>&#40;운영시간 오전 9시 ~ 오후 6시 &#47; 주말 및 공휴일 휴무&#41;</p>
+                <address>서울 종로구 종로 47&#40;공평동, 7층&#41;</address>
+                <p>&#40;주&#41;공차코리아 대표이사 김의열</p>
+                <p>사업자등록번호 214-88-84534</p>
+                <p>통신판매번호: 2020-서울종로-0966</p>
+                <p>&copy;GONGCHA KOREA CO.,LTD ALL RIGHTS RESERVED.</p>
+            </div>
+        </div>
+    </footer>
+        
+</body>
+</html>

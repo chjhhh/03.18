@@ -1,0 +1,818 @@
+@charset "UTF-8";
+@font-face {
+    font-family: GowunBatang-Bold;
+    src: url(../webfont/GowunBatang-Bold.woff);
+}
+@font-face {
+    font-family: Pretendard-Light;
+    src: url(../webfont/Pretendard-Light.woff);
+}
+
+/* -------------reset------------- */
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    box-sizing: border-box;
+    color: #202020;
+}
+a{
+    display: block;
+    text-decoration: none;
+}
+img{display: block;}
+.hidden{display: none;}
+
+
+@media all and (min-width: 375px){
+    /* -------------mo - header------------- */
+    header{
+        width: 100%;
+        height: 100px;
+    }
+    header .inner{
+        position: relative;
+    }
+    header .inner h1{
+        width: 100px;
+        height: 100px;
+        text-align: left;
+        line-height: 1;
+        padding: 15px 0;
+        margin-left: 20px;
+    }
+    header .inner h1 a{
+        color: #5E8432;
+        font-family: GowunBatang-Bold;
+    }
+    header .inner .menu{display: none;}
+    header .inner .menu-btn{
+        position: absolute;
+        top: 40px;
+        right: 20px;
+        width: 30px;
+        height: 23px;
+        cursor: pointer;
+    }
+    /* mo - nav */
+    .pc-menu{display: none;}
+
+    /* menu-toggle-btn */
+    .menu-toggle-btn{
+        width: 70px;
+        height: 70px;
+        position: absolute;
+        z-index: 10;
+        top: 0;
+        right: 0;
+        cursor: pointer;
+        transition: all 0.6s ease-in-out;
+        /* background: #5E8432; */
+        padding: 17px;
+        margin-top: 15px;
+    }
+    .menu-toggle-btn span{
+        display: block;
+        width: 40px;
+        height: 3px;
+        border-radius: 3px;
+        background: #21381D;
+        margin: 5px 0;
+    }
+    /* 햄버거 모양 x모양으로 변경 */
+    .menu-toggle-btn.active .one{
+        transform: translateY(7px) rotate(-135deg);
+        transition: all 0.6s ease-in-out;
+    }
+    .menu-toggle-btn.active .two{
+        opacity: 0;
+        transition: all 0.6s ease-in-out;
+    }
+    .menu-toggle-btn.active .three{
+        transform: translateY(-9px) rotate(-45deg);
+        transition: all 0.6s ease-in-out;
+    }
+    .menu-toggle-btn.active{
+        position: fixed;
+    }
+
+    /* mo - menu */
+    .mo-menu{
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        right: -100%;
+        background: #F5EEE8;
+        z-index: 9;
+        padding: 80px 0 0 40px;
+        transition: all 0.6s ease-in-out;
+    }
+    /* mo - menu js */
+    .mo-menu.show{
+        right: 0;
+    }
+    .mo-menu ul.mainMenu .item{
+        border-bottom: 1px solid #21381D;
+        overflow: hidden;
+    }
+    .mo-menu ul.mainMenu .item a.btn{
+        font-family: GowunBatang-Bold;
+        font-size: 25px;
+        color: #5E8432;
+        position: relative;
+        padding: 12px 0;
+    }
+    .mo-menu ul.mainMenu .item .submenu{
+        transition: max-height 0.6s;
+        max-height: 0;
+    }
+    .mo-menu .mainMenu .item:target .submenu{
+        max-height: 370px; /*높이 변경지점*/
+    }
+    .mo-menu .mainMenu .item .submenu a{
+        padding: 20px;
+        transition: all 0.3s ease-in-out;
+    }
+    .mo-menu .mainMenu .item .submenu a:hover{
+        color: #5E8432;
+    }
+
+    /* -------------mo - swiper slider------------- */
+    .mo-slide{
+        width: 100%;
+    }
+    .mo-slide img{
+        width: 100%;
+        max-width: 100%;
+    }
+    .tab-slide{
+        display: none;
+    }
+    .pc-slide{
+        display: none;
+    }
+
+    /* -------------mo - Tea recipe------------- */
+    .tea-recipe{
+        width: 100%;
+        /* height: 100%; */
+        background: #F5EEE8;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-content: center;
+        padding: 70px 20px;
+    }
+    .tea-recipe h2{
+        font-family: GowunBatang-Bold;
+        font-size: 2.188em; /*35px*/
+        width: 100%;
+        height: 60px;
+        text-align: center;
+    }
+    .tea-recipe .teas{
+        width: 100%;
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: GowunBatang-Bold;
+    }
+    .tea-recipe .teas p:nth-child(1) a{
+        color: #5E8432;
+    }
+    .tea-recipe .teas p:nth-child(2){
+        margin: 0 20px;
+    }
+
+    /* mo - tea-recipe tea */
+    .tea-recipe .tea{
+        height: 500px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;   
+    }
+    .tea-recipe .tea img{
+        width: 300px;
+        margin: 30px 0;
+    }
+    .tea-recipe .tea .tea-text-box{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .tea-recipe .tea .tea-text-box h3{
+        font-family: GowunBatang-Bold;
+        text-align: center;
+        font-size: 1.688em; /*27px*/
+        color: #5E8432;
+        width: 100%;
+    }
+    .tea-recipe .tea .tea-text-box p:nth-child(2){
+        text-align: center;
+        font-size: 0.938em; /*15px*/
+        width: 100%;
+    }
+    .tea-recipe .tea .tea-text-box p:nth-child(3){
+        text-align: center;
+        width: 90%;
+        margin: 20px 0 10px 0;
+    }
+    .tea-recipe .tea2, .tea-recipe .tea3{
+        display: none;
+    }
+    
+
+    /* -------------mo - BEST COMBINATION------------- */
+    .best-combination{
+        width: 100%;
+        padding: 70px 20px;
+    }
+    .best-combination h2{
+        font-family: GowunBatang-Bold;
+        font-size: 2.188em; /*35px*/
+        width: 100%;
+        height: 100px;
+        text-align: center;
+    }
+    .best-combination .mySwiperBest{
+        margin: 20px 0;
+        padding-bottom: 60px;
+    }
+    .best-combination .mySwiperBest .swiper-slide{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .best-combination .mySwiperBest img{
+        width: 65%;
+    }
+    .best-combination .mySwiperBest .slide-text{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-content: center;
+    }
+    .best-combination .mySwiperBest .slide-text h3{
+        font-family: GowunBatang-Bold;
+        font-size: 1.438em; /*23px*/
+        color: #fff;
+        padding: 10px;
+        /* width: 70%; */
+        margin: 25px 0 15px 0;
+        text-align: center;
+    }
+    .best-combination .mySwiperBest .swiper1 h3{
+        border: 1px solid #D5A67C;
+        background: #D5A67C;
+    }
+    .best-combination .mySwiperBest .swiper2 h3{
+        border: 1px solid #D0B7CA;
+        background: #D0B7CA;
+    }
+    .best-combination .mySwiperBest .swiper3 h3{
+        border: 1px solid #ABC19A;
+        background: #ABC19A;
+    }
+    .best-combination .mySwiperBest .swiper4 h3{
+        border: 1px solid #96A73D;
+        background: #96A73D;
+    }
+    .best-combination .mySwiperBest .swiper5 h3{
+        border: 1px solid #CABF66;
+        background: #CABF66;
+    }
+    .best-combination .mySwiperBest .swiper6 h3{
+        border: 1px solid #F1BA19;
+        background: #F1BA19;
+    }
+    .best-combination .mySwiperBest .slide-text p{
+        width: 90%;
+        text-align: center;
+    }
+
+    /* -------------mo - video------------- */
+    .video{
+        width: 100%;
+        height: auto;
+        margin: auto;
+    }
+    .video .play{
+        width: 100%;
+    }
+
+    /* -------------mo - Gongcha group------------- */
+    .gongcha-group{
+        width: 100%;
+        padding: 70px 20px;
+        /* background: bisque; */
+    }
+    .gongcha-group h2{
+        font-family: GowunBatang-Bold;
+        font-size: 2.188em; /*35px*/
+        text-align: center;
+        margin-bottom: 70px;
+    }
+    .gongcha-group .gongcha-group-div{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-bottom: 30px;
+        /* background: aqua; */
+    }
+    .gongcha-group img{
+        width: 225px;
+        height: 185px;
+    }
+    .gongcha-group .gongcha-one .text,
+    .gongcha-group .gongcha-three .text,
+    .gongcha-group .gongcha-five .text{
+        text-align: left;
+        margin-left: 18px;
+    }
+    .gongcha-group .gongcha-two .text,
+    .gongcha-group .gongcha-four .text{
+        text-align: right;
+        margin-right: 18px;
+    }
+    .gongcha-group .text{
+        width: 45%;
+    }
+    .gongcha-group .text h3{
+        font-size: 1.125em; /*18px*/
+        color: #5E8432;
+        font-family: GowunBatang-Bold;
+    }
+    .gongcha-group .text p{
+        font-size: 0.813em; /*13px*/
+        margin-top: 10px;
+    }
+
+    /* -------------mo - Footer------------- */
+    footer{
+        width: 100%;
+        background: #386932;
+    }
+    .pc-footer-ul{
+        display: none;
+    }
+    footer .footer1{
+        border-bottom: 1px solid #fff;
+        padding: 15px;
+    }
+    /* footer .footer1 p{
+        width: 80%;
+        border: 1px solid #fff;
+        padding: 10px 20px;
+        background: #fff;
+        border-radius: 20px;
+        margin: auto;
+    } */
+
+
+
+    /* mo - footer 셀렉트 박스 */
+    .sel_wrap{
+        z-index:1;
+        position:relative;
+        width:50%;
+        margin:0 auto;
+    }
+    .sel_wrap .sel_btn{
+        position:relative;
+        width:100%;
+        height:50px;
+        padding:0 20px;
+        background-color:#fff;
+        /* color:#fff; */
+        text-align:left;
+        box-sizing:border-box;
+        border: 0;
+        /* border-radius: 30px; */
+    }
+    .sel_wrap .sel_btn:after{
+        position:absolute;
+        top:50%;
+        right:20px;
+        margin-top:-3px;
+        border-right:6px solid transparent;
+        border-left:6px solid transparent;
+        border-top:10px solid #386932;
+        content:'';
+    }
+    .sel_wrap .sel_btn.active:after{
+        border-bottom:10px solid #386932;
+        border-top:0 none;
+    }
+    .sel_wrap .sel_lst{
+        display:none;
+        overflow-y:auto;
+        position:absolute;
+        top:50px;
+        left:0;
+        width:100%;
+        max-height:150px;
+        padding:10px 0;
+        border:1px solid #386932;
+        background:#fff;
+        box-sizing:border-box;
+        /* border-radius: 30px; */
+    }
+    .sel_wrap .sel_lst li a{
+        display:block;
+        padding:10px 15px;
+        font-size:14px;
+        color:#666;
+    }
+    .sel_wrap .sel_lst li a:hover{
+        background-color:#386932;
+        font-weight:bold;
+        color:#fff;
+    }
+
+
+    footer .footer2 address,
+    footer .footer2 p{
+        color: #fff;
+        font-style: normal;
+        text-align: center;
+        padding: 15px 0;
+        font-size: 0.813em; /*13px*/
+    }
+    footer .footer2 span{
+        font-weight: bold;
+        font-size: 1.250em; /*20px*/
+        color: #fff;
+        font-style: normal;
+        text-align: center;
+        padding: 15px 0;
+    }
+}
+
+
+@media all and (min-width: 768px){
+    /* body{background: plum;} */
+
+    /* -------------tab - header------------- */
+    header .inner h1{
+        width: 200px;
+        height: 100px;
+        padding: 30px 0;
+        font-size: 2.188em; /*35px*/
+    }
+
+    /* -------------tab - swiper slider------------- */
+    .mo-slide{
+        display: none;
+    }
+    .tab-slide{
+        display: block;
+        width: 100%;
+    }
+    .tab-slide img{
+        width: 100%;
+        max-width: 100%;
+    }
+    .pc-slide{
+        display: none;
+    }
+
+    /* -------------tab - Tea recipe------------- */
+    .tea-recipe .inner .tea .tea-text-box p:nth-child(3){
+        width: 75%;
+    }
+
+    /* -------------tab - BEST COMBINATION------------- */
+    .best-combination .mySwiperBest img{
+        width: 40%;
+    }
+    .best-combination .mySwiperBest .slide-text{
+        width: 75%;
+    }
+    .best-combination .mySwiperBest h3{
+        font-size: 1.625em; /*26px*/
+        /* width: 20%; */
+    }
+    .best-combination .mySwiperBest p{
+        font-size: 1.125em; /*18px*/
+    }
+
+    /* -------------tab - Gongcha group------------- */
+    .gongcha-group .gongcha-group-div{
+        margin-bottom: 60px;
+    }
+    .gongcha-group .gongcha-group-div h3{
+        font-size: 	1.438em; /*23px*/
+    }
+    .gongcha-group .gongcha-group-div p{
+        font-size: 1.000em; /*16px*/
+    }
+
+    /* -------------tab - Footer------------- */
+    footer .footer2{
+        font-size: 1.000em; /*16px*/
+    }
+
+} /* tab - end */
+
+
+@media all and (min-width: 1200px){
+    /* body{background: palevioletred;} */
+
+    .inner, .inner1, .inner2{
+        width: 62.5%; /* (1200 / 1920) * 100*/
+        margin: auto;
+    }
+    /* -------------pc - Header------------- */
+    header{
+        /* height: 70px; */
+        position: relative;
+        top: 0;
+        z-index: 10;
+        /* background: #fff; */
+    }
+    header .inner{
+        position: relative;
+    }
+    header .inner h1 a{
+        font-size: 1.250em; /*20px*/
+    }
+    /* 모바일 탭 메뉴 안 보이게 */
+    header .menu-toggle-btn{
+        display: none;
+    }
+
+    /* pc-menu */
+    .pc-menu{
+        display: block;
+    }
+    .pc-menu .mainMenu{
+        display: flex;
+        position: absolute;
+        top: 45px;
+        right: 20px;
+    }
+    .pc-menu .mainMenu a{
+        text-align: center;
+        font-family: GowunBatang-Bold;
+        /* background: #5E8432; */
+        /* margin: 5px 10px; */
+        padding: 5px 10px;
+        transition: all 0.3s;
+    }
+    .pc-menu .mainMenu li.item .item__name > a{
+        /* margin: 0 20px; */
+        padding: 20px;
+        font-size: 1.125em; /*18px*/
+    }
+    .pc-menu .mainMenu li.item:hover .item__name > a{
+        color: #5E8432;
+    }
+    .pc-menu .mainMenu li.item .item__contents{
+        position: fixed;
+        top: 100px;
+        left: 0;
+        width: 100%;
+        height: 100px;
+        background: #fff;
+        display: none; /*opacity로하면 버그 생겨서 display로 사용권장*/
+        border-bottom: 4px solid #5E8432;
+    }
+    .pc-menu .mainMenu li.item:hover .item__contents{
+        display: block; /*opacity로하면 버그 생겨서 display로 사용권장*/
+    }
+    .pc-menu .mainMenu li.item .contents__menu{
+        width: 62.5%;
+        height: 100px;
+        margin: auto;
+        position: relative;
+        /* background: #666; */
+    }
+    .pc-menu .mainMenu li.item .contents__menu .menu__inner{
+        position: absolute;
+        top: 15px;
+        right: 20px;
+        /* width: 60%; */
+        margin: auto;
+        height: 75px;
+        display: flex;
+        padding: 20px;
+        /* background: #ABC19A; */
+    }
+    .pc-menu .mainMenu li.item .contents__menu .menu__inner li{
+        /* margin: 0 10px; */
+        padding: 0 20px;
+    }
+    .pc-menu .mainMenu li.item .contents__menu .menu__inner li a{
+        font-size: 	1.063em; /*17px*/
+    }
+    .pc-menu .mainMenu li.item .contents__menu .menu__inner li a:hover{
+        color: #5E8432;
+    }
+    
+    
+    /* -------------pc - swiper slider------------- */
+    .mo-slide{
+        display: none;
+    }
+    .tab-slide{
+        display: none;
+    }
+    .pc-slide{
+        display: block;
+        width: 100%;
+    }
+    .pc-slide img{
+        width: 100%;
+        max-width: 100%;
+        height: 810px;
+    }
+
+    /* -------------pc - Tea recipe------------- */
+    .tea-recipe .inner h2{
+        font-size: 2.500em; /*40px*/
+    }
+    .tea-recipe .inner .tea{
+        width: 90%;
+        height: 380px;
+        display: flex;
+        justify-content: space-around;
+        margin: auto;
+    }
+    .tea-recipe .inner .tea .tea-text-box{
+        display: flex;
+        flex-wrap: wrap;
+        width: 48%;
+        justify-content: left;
+        align-items: center;
+        align-self: center;
+    }
+    .tea-recipe .inner .tea .tea-text-box h3,
+    .tea-recipe .inner .tea .tea-text-box p:nth-child(2),
+    .tea-recipe .inner .tea .tea-text-box p:nth-child(3){
+        width: 100%;
+        text-align: left;
+    }
+    .tea-recipe .inner .tea .tea-text-box h3{
+        font-size: 1.875em; /*30px*/
+    }
+    .tea-recipe .inner .tea .tea-text-box p:nth-child(2){
+        margin-bottom: 30px;
+    }
+    .tea-recipe .inner .tea .tea-text-box p:nth-child(2),
+    .tea-recipe .inner .tea .tea-text-box p:nth-child(3){
+        font-size: 1.063em; /*17px*/
+    }
+    .tea-recipe .inner .tea2,
+    .tea-recipe .inner .tea3{
+        display: none;
+    }
+
+    /* -------------pc - BEST COMBINATION------------- */
+    .best-combination .inner h2{
+        font-size: 2.500em; /*40px*/
+    }
+    .best-combination .inner .mySwiperBest .swiper-slide{
+        /* background: #5E8432; */
+        display: flex;
+        justify-content: space-around;
+        margin: 40px 0;
+        height: auto;
+    }
+    .best-combination .mySwiperBest .swiper-slide img{
+        width: 30%;
+    }
+    .best-combination .mySwiperBest .swiper-slide .slide-text{
+        justify-content: left;
+        /* align-content: space-around; */
+        width: 45%;
+    }
+    .best-combination .mySwiperBest .swiper-slide .slide-text h3{
+        /* height: 70px; */
+        font-size: 1.875em; /*30px*/
+        padding: 10px;
+        margin: 0 0 20px 0;
+        /* margin-bottom: 50px; */
+        /* width: 80%; */
+    }
+    .best-combination .mySwiperBest .swiper-slide .slide-text p{
+        text-align: left;
+        font-size: 1.188em; /*19px*/
+        width: 100%;
+        /* background: #CABF66; */
+    }
+
+    /* -------------pc - Gongcha group------------- */
+    .gongcha-group .inner{
+        /* background: #ABC19A; */
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        width: 75%;
+    }
+    .gongcha-group .inner h2{
+        width: 100%;
+        font-size: 2.500em; /*40px*/
+    }
+    .gongcha-group .inner .gongcha-group-div{
+        width: 30%;
+        /* height: 100%; */
+        margin: 20px auto;
+        background: #fff;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-content: center;
+    }
+    .gongcha-group .inner .gongcha-group-div img,
+    .gongcha-group .inner .gongcha-group-div .text{
+        width: 70%;
+        margin: 10px;
+    }
+    .gongcha-group .inner .gongcha-group-div .text h3,
+    .gongcha-group .inner .gongcha-group-div .text p{
+        text-align: center;
+    }
+    /* two, four 순서 변경 */
+    .gongcha-two,
+    .gongcha-four{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .gongcha-two img,
+    .gongcha-four img{
+        order: 1;
+    }
+    .gongcha-two .text,
+    .gongcha-four .text{
+        order: 2;
+    }
+
+
+    /* -------------pc - Footer------------- */
+    footer .inner1{
+        width: 100%;
+        border-bottom: 1px solid #fff;
+    }
+    footer .footer1{
+        display: none;
+    }
+    footer .pc-footer-ul,
+    footer .inner2{
+        width: 70%;
+        border: 0;
+        margin: auto;
+        /* background: #666; */
+    }
+    footer .pc-footer-ul{
+        display: block;
+        display: flex;
+        justify-content: left;
+        align-content: space-around;
+        padding: 30px;
+        /* background: #666; */
+    }
+    footer .pc-footer-ul li{
+        margin: auto;
+    }
+    footer .pc-footer-ul li a{
+        /* background: #ccc; */
+        text-align: center;
+        color: #fff;
+        padding: 10px;
+        font-size: 0.875em; /*14px*/
+    }
+
+    /* footer2 */
+    footer .footer2{
+        clear: both;
+        margin: auto;
+        padding: 20px;
+    }
+    footer .footer2 p:nth-child(1){
+        width: 100%;
+        text-align: left;
+        margin-left: 30px;
+        font-size: 0.875em; /*14px*/
+    }
+    footer .footer2 address,
+    footer .footer2 p:nth-child(3),
+    footer .footer2 p:nth-child(4),
+    footer .footer2 p:nth-child(5){
+        text-align: left;
+        float: left;
+        /* background: #202020; */
+        font-size: 0.875em; /*14px*/
+        margin: 10px 0 10px 30px;
+    }
+    footer .footer2 p:nth-child(6){
+        clear: both;
+        font-size: 0.875em; /*14px*/
+        /* background: #96A73D; */
+        text-align: left;
+        margin-left: 30px;
+    }
+
+
+} /* pc - end */
