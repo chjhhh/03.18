@@ -55,7 +55,7 @@ img{display: block;}
         cursor: pointer;
     }
     /* mo - nav */
-    .pc-menu{display: none;}
+    .pc-menu{display: none;} /*PC 안 보이게*/
 
     /* menu-toggle-btn */
     .menu-toggle-btn{
@@ -112,10 +112,12 @@ img{display: block;}
     .mo-menu.show{
         right: 0;
     }
+    /* 메뉴 */
     .mo-menu ul.mainMenu .item{
         border-bottom: 1px solid #21381D;
         overflow: hidden;
     }
+    /* 1단 */
     .mo-menu ul.mainMenu .item a.btn{
         font-family: GowunBatang-Bold;
         font-size: 25px;
@@ -123,11 +125,12 @@ img{display: block;}
         position: relative;
         padding: 12px 0;
     }
+    /* 2단 */
     .mo-menu ul.mainMenu .item .submenu{
         transition: max-height 0.6s;
         max-height: 0;
     }
-    .mo-menu .mainMenu .item:target .submenu{
+    .mo-menu .mainMenu .item:target .submenu{ /*target 사용*/
         max-height: 370px; /*높이 변경지점*/
     }
     .mo-menu .mainMenu .item .submenu a{
@@ -164,6 +167,7 @@ img{display: block;}
         align-content: center;
         padding: 70px 20px;
     }
+    /* 제목 */
     .tea-recipe h2{
         font-family: GowunBatang-Bold;
         font-size: 2.188em; /*35px*/
@@ -171,7 +175,7 @@ img{display: block;}
         height: 60px;
         text-align: center;
     }
-    .tea-recipe .teas{
+    .tea-recipe .teas{ /* 티 전체 div */
         width: 100%;
         height: 50px;
         display: flex;
@@ -193,11 +197,11 @@ img{display: block;}
         flex-wrap: wrap;
         justify-content: center;   
     }
-    .tea-recipe .tea img{
+    .tea-recipe .tea img{ /*티 이미지*/
         width: 300px;
         margin: 30px 0;
     }
-    .tea-recipe .tea .tea-text-box{
+    .tea-recipe .tea .tea-text-box{ /*티 텍스트*/
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
@@ -229,6 +233,7 @@ img{display: block;}
         width: 100%;
         padding: 70px 20px;
     }
+    /* 제목 */
     .best-combination h2{
         font-family: GowunBatang-Bold;
         font-size: 2.188em; /*35px*/
@@ -236,6 +241,7 @@ img{display: block;}
         height: 100px;
         text-align: center;
     }
+    /* swiper slider */
     .best-combination .mySwiperBest{
         margin: 20px 0;
         padding-bottom: 60px;
@@ -245,10 +251,10 @@ img{display: block;}
         flex-wrap: wrap;
         justify-content: center;
     }
-    .best-combination .mySwiperBest img{
+    .best-combination .mySwiperBest img{  /*티 이미지*/
         width: 65%;
     }
-    .best-combination .mySwiperBest .slide-text{
+    .best-combination .mySwiperBest .slide-text{ /*티 텍스트*/
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
@@ -263,6 +269,7 @@ img{display: block;}
         margin: 25px 0 15px 0;
         text-align: center;
     }
+    /* 각 tea 텍스트 */
     .best-combination .mySwiperBest .swiper1 h3{
         border: 1px solid #D5A67C;
         background: #D5A67C;
@@ -302,18 +309,20 @@ img{display: block;}
         width: 100%;
     }
 
-    /* -------------mo - Gongcha group------------- */
+    /* -------------mo - Gongcha group : 공차의 철학------------- */
     .gongcha-group{
         width: 100%;
         padding: 70px 20px;
         /* background: bisque; */
     }
+    /* 제목 */
     .gongcha-group h2{
         font-family: GowunBatang-Bold;
         font-size: 2.188em; /*35px*/
         text-align: center;
         margin-bottom: 70px;
     }
+    /* 모든 div */
     .gongcha-group .gongcha-group-div{
         display: flex;
         flex-wrap: wrap;
@@ -325,17 +334,20 @@ img{display: block;}
         width: 225px;
         height: 185px;
     }
+    /* 이미지 오른쪽, 텍스트 왼쪽 */
     .gongcha-group .gongcha-one .text,
     .gongcha-group .gongcha-three .text,
     .gongcha-group .gongcha-five .text{
         text-align: left;
         margin-left: 18px;
     }
+    /* 이미지 왼쪽, 텍스트 오른쪽 */
     .gongcha-group .gongcha-two .text,
     .gongcha-group .gongcha-four .text{
         text-align: right;
         margin-right: 18px;
     }
+    /* 각 텍스트 css */
     .gongcha-group .text{
         width: 45%;
     }
@@ -354,6 +366,7 @@ img{display: block;}
         width: 100%;
         background: #386932;
     }
+    /* pc 푸터 안 보이게 */
     .pc-footer-ul{
         display: none;
     }
@@ -379,7 +392,7 @@ img{display: block;}
         width:50%;
         margin:0 auto;
     }
-    .sel_wrap .sel_btn{
+    .sel_wrap .sel_btn{  /*버튼*/
         position:relative;
         width:100%;
         height:50px;
@@ -391,7 +404,7 @@ img{display: block;}
         border: 0;
         /* border-radius: 30px; */
     }
-    .sel_wrap .sel_btn:after{
+    .sel_wrap .sel_btn:after{  /*정보를 담는 상자*/
         position:absolute;
         top:50%;
         right:20px;
@@ -405,7 +418,7 @@ img{display: block;}
         border-bottom:10px solid #386932;
         border-top:0 none;
     }
-    .sel_wrap .sel_lst{
+    .sel_wrap .sel_lst{  /*회사소개 ~ 사이트맵 정보*/
         display:none;
         overflow-y:auto;
         position:absolute;
@@ -431,7 +444,7 @@ img{display: block;}
         color:#fff;
     }
 
-
+    /* footer 정보 */
     footer .footer2 address,
     footer .footer2 p{
         color: #fff;
@@ -440,7 +453,7 @@ img{display: block;}
         padding: 15px 0;
         font-size: 0.813em; /*13px*/
     }
-    footer .footer2 span{
+    footer .footer2 span{ /*고객센터 번호 강조*/
         font-weight: bold;
         font-size: 1.250em; /*20px*/
         color: #fff;
@@ -463,9 +476,11 @@ img{display: block;}
     }
 
     /* -------------tab - swiper slider------------- */
+    /* 모바일 슬라이드 안 보이게 */
     .mo-slide{
         display: none;
     }
+    /* 태블릿 슬라이드 보이게 */
     .tab-slide{
         display: block;
         width: 100%;
@@ -474,19 +489,23 @@ img{display: block;}
         width: 100%;
         max-width: 100%;
     }
+    /* PC 슬라이드 안 보이게 */
     .pc-slide{
         display: none;
     }
 
     /* -------------tab - Tea recipe------------- */
+    /* 텍스트 width 수정 */
     .tea-recipe .inner .tea .tea-text-box p:nth-child(3){
         width: 75%;
     }
 
     /* -------------tab - BEST COMBINATION------------- */
+    /* 이미지 width 수정 */
     .best-combination .mySwiperBest img{
         width: 40%;
     }
+    /* 텍스트 width 수정 */
     .best-combination .mySwiperBest .slide-text{
         width: 75%;
     }
@@ -499,6 +518,7 @@ img{display: block;}
     }
 
     /* -------------tab - Gongcha group------------- */
+    /* margin bottom 수정, 폰트 크기 수정 */
     .gongcha-group .gongcha-group-div{
         margin-bottom: 60px;
     }
@@ -510,6 +530,7 @@ img{display: block;}
     }
 
     /* -------------tab - Footer------------- */
+    /* 폰트 크기 수정 */
     footer .footer2{
         font-size: 1.000em; /*16px*/
     }
@@ -544,7 +565,7 @@ img{display: block;}
     }
 
     /* pc-menu */
-    .pc-menu{
+    .pc-menu{ /* PC 메뉴 보이게 */
         display: block;
     }
     .pc-menu .mainMenu{
@@ -561,15 +582,17 @@ img{display: block;}
         padding: 5px 10px;
         transition: all 0.3s;
     }
+    /* 1단 */
     .pc-menu .mainMenu li.item .item__name > a{
         /* margin: 0 20px; */
         padding: 20px;
         font-size: 1.125em; /*18px*/
     }
+    /* hover할 때 a 컬러 변경 */
     .pc-menu .mainMenu li.item:hover .item__name > a{
         color: #5E8432;
     }
-    .pc-menu .mainMenu li.item .item__contents{
+    .pc-menu .mainMenu li.item .item__contents{ /*width 100%*/
         position: fixed;
         top: 100px;
         left: 0;
@@ -582,13 +605,14 @@ img{display: block;}
     .pc-menu .mainMenu li.item:hover .item__contents{
         display: block; /*opacity로하면 버그 생겨서 display로 사용권장*/
     }
-    .pc-menu .mainMenu li.item .contents__menu{
+    .pc-menu .mainMenu li.item .contents__menu{ /*width 가운데 정렬*/
         width: 62.5%;
         height: 100px;
         margin: auto;
         position: relative;
         /* background: #666; */
     }
+    /* 2단 */
     .pc-menu .mainMenu li.item .contents__menu .menu__inner{
         position: absolute;
         top: 15px;
@@ -607,18 +631,21 @@ img{display: block;}
     .pc-menu .mainMenu li.item .contents__menu .menu__inner li a{
         font-size: 	1.063em; /*17px*/
     }
+    /* 메뉴 hover할 때 a 컬러 변경 */
     .pc-menu .mainMenu li.item .contents__menu .menu__inner li a:hover{
         color: #5E8432;
     }
     
     
     /* -------------pc - swiper slider------------- */
+    /* 모바일, 탭 안 보이게 */
     .mo-slide{
         display: none;
     }
     .tab-slide{
         display: none;
     }
+    /* PC 슬라이드 보이게 */
     .pc-slide{
         display: block;
         width: 100%;
@@ -633,6 +660,7 @@ img{display: block;}
     .tea-recipe .inner h2{
         font-size: 2.500em; /*40px*/
     }
+    /* 각 tea div */
     .tea-recipe .inner .tea{
         width: 90%;
         height: 380px;
@@ -640,6 +668,7 @@ img{display: block;}
         justify-content: space-around;
         margin: auto;
     }
+    /* tea 텍스트 */
     .tea-recipe .inner .tea .tea-text-box{
         display: flex;
         flex-wrap: wrap;
@@ -673,6 +702,7 @@ img{display: block;}
     .best-combination .inner h2{
         font-size: 2.500em; /*40px*/
     }
+    /* swiper slider */
     .best-combination .inner .mySwiperBest .swiper-slide{
         /* background: #5E8432; */
         display: flex;
@@ -680,9 +710,11 @@ img{display: block;}
         margin: 40px 0;
         height: auto;
     }
+    /* 이미지 가로 크기 */
     .best-combination .mySwiperBest .swiper-slide img{
         width: 30%;
     }
+    /* 텍스트 */
     .best-combination .mySwiperBest .swiper-slide .slide-text{
         justify-content: left;
         /* align-content: space-around; */
@@ -703,7 +735,7 @@ img{display: block;}
         /* background: #CABF66; */
     }
 
-    /* -------------pc - Gongcha group------------- */
+    /* -------------pc - Gongcha group : 공차의 철학------------- */
     .gongcha-group .inner{
         /* background: #ABC19A; */
         display: flex;
@@ -715,6 +747,7 @@ img{display: block;}
         width: 100%;
         font-size: 2.500em; /*40px*/
     }
+    /* 각 div */
     .gongcha-group .inner .gongcha-group-div{
         width: 30%;
         /* height: 100%; */
@@ -734,7 +767,7 @@ img{display: block;}
     .gongcha-group .inner .gongcha-group-div .text p{
         text-align: center;
     }
-    /* two, four 순서 변경 */
+    /* two, four 이미지와 텍스트 순서 변경 */
     .gongcha-two,
     .gongcha-four{
         display: flex;
@@ -755,6 +788,7 @@ img{display: block;}
         width: 100%;
         border-bottom: 1px solid #fff;
     }
+    /* 모바일, 탭 셀렉트 박스 안 보이게 */
     footer .footer1{
         display: none;
     }
@@ -765,7 +799,7 @@ img{display: block;}
         margin: auto;
         /* background: #666; */
     }
-    footer .pc-footer-ul{
+    footer .pc-footer-ul{ /* 회사소개 ~ 사이트맵 정보 */
         display: block;
         display: flex;
         justify-content: left;
@@ -785,12 +819,13 @@ img{display: block;}
     }
 
     /* footer2 */
+    /* footer 정보 */
     footer .footer2{
         clear: both;
         margin: auto;
         padding: 20px;
     }
-    footer .footer2 p:nth-child(1){
+    footer .footer2 p:nth-child(1){ /*고객센터*/
         width: 100%;
         text-align: left;
         margin-left: 30px;
